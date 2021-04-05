@@ -1,0 +1,5 @@
+<snmp-config xmlns="http://xmlns.opennms.org/xsd/config/snmp" version="v2c" read-community="public" timeout="1800" retry="1">
+   <definition write-community="DEVA44-w" read-community="DEVA44-r" timeout="3000">
+      <specific>88.96.72.54</specific>
+   </definition>
+</snmp-config>

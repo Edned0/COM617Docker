@@ -1,0 +1,217 @@
+<datacollection-group xmlns="http://xmlns.opennms.org/xsd/config/datacollection" name="DB44-MIB">
+   <resourceType name="channelEntry" label="channelEntry" resourceLabel="${chEnable} (${index})">
+      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+   </resourceType>
+   <resourceType name="channelStatusEntry" label="channelStatusEntry" resourceLabel="${rfAlarm} (${index})">
+      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+   </resourceType>
+   <group name="product" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.1.1" instance="0" alias="deviceID" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.1.2" instance="0" alias="serial" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.1.3" instance="0" alias="revision" type="octetstring"/>
+   </group>
+   <group name="network" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.1.1" instance="0" alias="deviceIpAddress" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.1.2" instance="0" alias="gatewayAddress" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.1.3" instance="0" alias="subnetMask" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.1.4" instance="0" alias="dnsAddress" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.1.6" instance="0" alias="dhcp" type="string"/>
+   </group>
+   <group name="web" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.1" instance="0" alias="httpPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.2" instance="0" alias="httpAdminUsername" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.3" instance="0" alias="httpAdminPassword" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.4" instance="0" alias="httpUsername" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.5" instance="0" alias="httpPassword" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.2.6" instance="0" alias="httpSesTout" type="integer32"/>
+   </group>
+   <group name="snmpSett" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.1" instance="0" alias="snmpMngrIp" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.2" instance="0" alias="snmpMngrPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.3" instance="0" alias="snmpAgentID" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.4" instance="0" alias="snmpAgentPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.5" instance="0" alias="snmpReadCommunity" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.6" instance="0" alias="snmpWriteCommunity" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.7" instance="0" alias="snmpAgentEn" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.3.8" instance="0" alias="snmpSesTout" type="integer32"/>
+   </group>
+   <group name="email" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.1" instance="0" alias="smtpServAddr" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.2" instance="0" alias="smtpServPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.3" instance="0" alias="smtpSender" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.4" instance="0" alias="smtpRecipient1" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.5" instance="0" alias="smtpRecipient2" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.6" instance="0" alias="smtpUsername" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.4.7" instance="0" alias="smtpPassword" type="octetstring"/>
+   </group>
+   <group name="gsmModem" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.5.1" instance="0" alias="gsm1number" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.5.2" instance="0" alias="gsm2number" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.5.3" instance="0" alias="gsm3number" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.5.4" instance="0" alias="gsm4number" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.5.6" instance="0" alias="baudrate" type="integer32"/>
+   </group>
+   <group name="audioStream" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.6.1" instance="0" alias="audioPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.6.2" instance="0" alias="audioName" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.6.3" instance="0" alias="audioQuality" type="string"/>
+   </group>
+   <group name="managment" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.1" instance="0" alias="rfAttenuator" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.2" instance="0" alias="deemph" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.3" instance="0" alias="rdsMode" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.4" instance="0" alias="sntpEn" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.5" instance="0" alias="sntpServer" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.6" instance="0" alias="sntpPort" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.7" instance="0" alias="dateTime" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.8" instance="0" alias="reboot" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.9" instance="0" alias="pwdgEn" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.10" instance="0" alias="pwdgTarget" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.11" instance="0" alias="pwdgInterval" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.12" instance="0" alias="pwdgSatrtupDelay" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.7.13" instance="0" alias="pwdgMaxRetries" type="integer32"/>
+   </group>
+   <group name="channelTable" ifType="all">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.1" instance="channelEntry" alias="channelNumber" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.2" instance="channelEntry" alias="chEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.3" instance="channelEntry" alias="frequency" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.4" instance="channelEntry" alias="chName" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.5" instance="channelEntry" alias="observation" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.6" instance="channelEntry" alias="rfLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.7" instance="channelEntry" alias="rfHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.8" instance="channelEntry" alias="rfWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.9" instance="channelEntry" alias="rfWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.10" instance="channelEntry" alias="rfTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.11" instance="channelEntry" alias="rfRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.12" instance="channelEntry" alias="rfAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.13" instance="channelEntry" alias="rfWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.14" instance="channelEntry" alias="rfEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.15" instance="channelEntry" alias="rfSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.16" instance="channelEntry" alias="rfSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.17" instance="channelEntry" alias="mpxLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.18" instance="channelEntry" alias="mpxHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.19" instance="channelEntry" alias="mpxWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.20" instance="channelEntry" alias="mpxWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.21" instance="channelEntry" alias="mpxTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.22" instance="channelEntry" alias="mpxRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.23" instance="channelEntry" alias="mpxAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.24" instance="channelEntry" alias="mpxWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.25" instance="channelEntry" alias="mpxEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.26" instance="channelEntry" alias="mpxSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.27" instance="channelEntry" alias="mpxSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.28" instance="channelEntry" alias="mpxPowerLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.29" instance="channelEntry" alias="mpxPowerHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.30" instance="channelEntry" alias="mpxPowerWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.31" instance="channelEntry" alias="mpxPowerWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.32" instance="channelEntry" alias="mpxPowerTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.33" instance="channelEntry" alias="mpxPowerRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.34" instance="channelEntry" alias="mpxPowerAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.35" instance="channelEntry" alias="mpxPowerWarniEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.36" instance="channelEntry" alias="mpxPowerEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.37" instance="channelEntry" alias="mpxPowerSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.38" instance="channelEntry" alias="mpxPowerSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.39" instance="channelEntry" alias="leftLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.40" instance="channelEntry" alias="leftHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.41" instance="channelEntry" alias="leftWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.42" instance="channelEntry" alias="leftWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.43" instance="channelEntry" alias="leftTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.44" instance="channelEntry" alias="leftRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.45" instance="channelEntry" alias="leftAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.46" instance="channelEntry" alias="leftWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.47" instance="channelEntry" alias="leftEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.48" instance="channelEntry" alias="leftSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.49" instance="channelEntry" alias="leftSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.50" instance="channelEntry" alias="rightLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.51" instance="channelEntry" alias="rightHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.52" instance="channelEntry" alias="rightWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.53" instance="channelEntry" alias="rightWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.54" instance="channelEntry" alias="rightTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.55" instance="channelEntry" alias="rightRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.56" instance="channelEntry" alias="rightAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.57" instance="channelEntry" alias="rightWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.58" instance="channelEntry" alias="rightEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.59" instance="channelEntry" alias="rightSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.60" instance="channelEntry" alias="rightSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.61" instance="channelEntry" alias="pilotLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.62" instance="channelEntry" alias="pilotHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.63" instance="channelEntry" alias="pilotWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.64" instance="channelEntry" alias="pilotWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.65" instance="channelEntry" alias="pilotTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.66" instance="channelEntry" alias="pilotRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.67" instance="channelEntry" alias="pilotAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.68" instance="channelEntry" alias="pilotWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.69" instance="channelEntry" alias="pilotEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.70" instance="channelEntry" alias="pilotSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.71" instance="channelEntry" alias="pilotSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.72" instance="channelEntry" alias="rdsLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.73" instance="channelEntry" alias="rdsHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.74" instance="channelEntry" alias="rdsWarningLow" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.75" instance="channelEntry" alias="rdsWarningHigh" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.76" instance="channelEntry" alias="rdsTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.77" instance="channelEntry" alias="rdsRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.78" instance="channelEntry" alias="rdsAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.79" instance="channelEntry" alias="rdsWarningEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.80" instance="channelEntry" alias="rdsEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.81" instance="channelEntry" alias="rdsSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.82" instance="channelEntry" alias="rdsSnmpEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.83" instance="channelEntry" alias="rdsGroupMask" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.84" instance="channelEntry" alias="rdsGroupTrigger" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.85" instance="channelEntry" alias="rdsGroupRelease" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.86" instance="channelEntry" alias="rdsGroupAlarmEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.87" instance="channelEntry" alias="rdsGroupEmailEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.88" instance="channelEntry" alias="rdsGroupSmsEnable" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.2.8.1.1.89" instance="channelEntry" alias="rdsGroupSnmpEnable" type="string"/>
+   </group>
+   <group name="monitoring" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.1" instance="0" alias="tunerFreq" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.2" instance="0" alias="rfLvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.3" instance="0" alias="mpath" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.4" instance="0" alias="posDev" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.5" instance="0" alias="negDev" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.6" instance="0" alias="mpxDev" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.7" instance="0" alias="mpxPower" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.8" instance="0" alias="chanLlvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.9" instance="0" alias="chanRlvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.10" instance="0" alias="chanLpRlvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.11" instance="0" alias="chanLmRlvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.12" instance="0" alias="pilotLvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.13" instance="0" alias="rdsLvl" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.14" instance="0" alias="rdsGroups" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.15" instance="0" alias="rdsPI" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.16" instance="0" alias="rdsPS" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.17" instance="0" alias="rdsRT" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.18" instance="0" alias="rdsTA" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.19" instance="0" alias="rdsTP" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.20" instance="0" alias="rdsMS" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.21" instance="0" alias="rdsPTY" type="octetstring"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.22" instance="0" alias="rdsBer" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.23" instance="0" alias="rdsLock" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.3.24" instance="0" alias="stereoFlag" type="string"/>
+   </group>
+   <group name="status" ifType="ignore">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.1" instance="0" alias="loggerStatus" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.2" instance="0" alias="currentChannel" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.4" instance="0" alias="sessions" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.5" instance="0" alias="webSessionTout" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.6" instance="0" alias="snmpSessionTout" type="integer32"/>
+   </group>
+   <group name="channelStatusTable" ifType="all">
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.1" instance="channelStatusEntry" alias="channelIndex" type="integer32"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.2" instance="channelStatusEntry" alias="rfAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.3" instance="channelStatusEntry" alias="mpxAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.4" instance="channelStatusEntry" alias="mpxPwrAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.5" instance="channelStatusEntry" alias="leftAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.6" instance="channelStatusEntry" alias="rightAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.7" instance="channelStatusEntry" alias="pilotAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.8" instance="channelStatusEntry" alias="rdsAlarm" type="string"/>
+      <mibObj oid=".1.3.6.1.4.1.35833.5.4.3.1.9" instance="channelStatusEntry" alias="groupAlarm" type="integer32"/>
+   </group>
+   <systemDef name="DB44-Monitoring">
+      <sysoidMask>.1.3.6.1.4.1.</sysoidMask>
+      <collect>
+         <includeGroup>monitoring</includeGroup>
+      </collect>
+   </systemDef>
+</datacollection-group>

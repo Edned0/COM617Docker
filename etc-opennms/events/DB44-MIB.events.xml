@@ -1,0 +1,1332 @@
+<events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>1</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapTest</uei>
+      <event-label>DB44-MIB defined trap event: trapTest</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapTest trap received
+	snmpAgentID=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>2</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRFLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRFLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rfLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRFLow trap received
+	rfLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRFHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRFHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rfLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRFHigh trap received
+	rfLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>4</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRFOk</uei>
+      <event-label>DB44-MIB defined trap event: trapRFOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rfLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRFOk trap received
+	rfLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>5</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXLow</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxDev&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXLow trap received
+	mpxDev=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxDev&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXHigh trap received
+	mpxDev=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>7</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXOk</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxDev&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXOk trap received
+	mpxDev=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>8</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapLEFTLow</uei>
+      <event-label>DB44-MIB defined trap event: trapLEFTLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanLlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapLEFTLow trap received
+	chanLlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>9</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapLEFTHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapLEFTHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanLlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapLEFTHigh trap received
+	chanLlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>10</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapLEFTOk</uei>
+      <event-label>DB44-MIB defined trap event: trapLEFTOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanLlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapLEFTOk trap received
+	chanLlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>11</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRIGHTLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRIGHTLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanRlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRIGHTLow trap received
+	chanRlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>12</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRIGHTHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRIGHTHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanRlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRIGHTHigh trap received
+	chanRlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>13</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRIGHTOk</uei>
+      <event-label>DB44-MIB defined trap event: trapRIGHTOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanRlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRIGHTOk trap received
+	chanRlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>14</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapPILOTLow</uei>
+      <event-label>DB44-MIB defined trap event: trapPILOTLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pilotLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapPILOTLow trap received
+	pilotLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>15</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapPILOTHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapPILOTHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pilotLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapPILOTHigh trap received
+	pilotLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>16</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapPILOTOk</uei>
+      <event-label>DB44-MIB defined trap event: trapPILOTOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pilotLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapPILOTOk trap received
+	pilotLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>17</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSLow trap received
+	rdsLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>18</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSHigh trap received
+	rdsLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>19</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSOk</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSOk trap received
+	rdsLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>20</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSGroupLoss</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSGroupLoss</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsGroups&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSGroupLoss trap received
+	rdsGroups=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>21</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSGroupRecover</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSGroupRecover</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsGroups&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSGroupRecover trap received
+	rdsGroups=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>22</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXPowerLow</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXPowerLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxPower&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXPowerLow trap received
+	mpxPower=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>23</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXPowerHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXPowerHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxPower&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXPowerHigh trap received
+	mpxPower=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>24</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXPowerOk</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXPowerOk</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxPower&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXPowerOk trap received
+	mpxPower=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>25</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRFWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRFWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rfLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRFWarningLow trap received
+	rfLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>26</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRFWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRFWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rfLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRFWarningHigh trap received
+	rfLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>27</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxDev&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXWarningLow trap received
+	mpxDev=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>28</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxDev&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXWarningHigh trap received
+	mpxDev=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>29</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapLEFTWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapLEFTWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanLlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapLEFTWarningLow trap received
+	chanLlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>30</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapLEFTWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapLEFTWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanLlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapLEFTWarningHigh trap received
+	chanLlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>31</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRIGHTWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRIGHTWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanRlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRIGHTWarningLow trap received
+	chanRlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>32</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRIGHTWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRIGHTWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	chanRlvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRIGHTWarningHigh trap received
+	chanRlvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>33</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapPILOTWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapPILOTWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pilotLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapPILOTWarningLow trap received
+	pilotLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>34</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapPILOTWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapPILOTWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pilotLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapPILOTWarningHigh trap received
+	pilotLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>35</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSWarningLow trap received
+	rdsLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>36</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapRDSWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapRDSWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	rdsLvl&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapRDSWarningHigh trap received
+	rdsLvl=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>37</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXPowerWarningLow</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXPowerWarningLow</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxPower&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXPowerWarningLow trap received
+	mpxPower=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.35833.5.100</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>38</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/DB44-MIB/trapMPXPowerWarningHigh</uei>
+      <event-label>DB44-MIB defined trap event: trapMPXPowerWarningHigh</event-label>
+      <descr>
+&lt;p> &lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	mpxPower&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	snmpAgentID&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	trapMPXPowerWarningHigh trap received
+	mpxPower=%parm[#1]%
+	snmpAgentID=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+   </event>
+</events>
