@@ -1,3 +1,5 @@
+![Arqiva Logo](https://www.arqiva.com/application/images/arqiva-logo.png)
+
 # DB44 Monitoring Project - Arqiva
 
 ## Description
