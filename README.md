@@ -2,6 +2,8 @@
 
 # DB44 Monitoring Project - Arqiva
 
+![Diagram](https://upl.edned.net/u/DCj6EcxhqL.png)
+
 ## Description
 This repository contains the Docker composition comprising of OpenNMS Horizon, Grafana & Postgres instances to monitor the DEVA DB44 FM data and input it to Open Source monitoring solutions, built for Arqiva UK as a group university project.
 
